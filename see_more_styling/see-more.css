@@ -1,1 +1,24 @@
-#
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blogs-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blogs-content p {
+  padding: 10%;
+  min-width: 300px;
+  width: 49vw;
+}
+
+.content-image {
+  width: 50vw;
+  object-fit: cover;
+  height: 100%;
+}
