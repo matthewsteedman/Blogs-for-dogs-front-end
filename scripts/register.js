@@ -1,5 +1,5 @@
 function create_user() {
-  const inputs = document.getElementBytagName("input");
+  const inputs = document.getElementsByTagName("input");
 
   fetch("https://immense-bastion-09419.herokuapp.com/register-user/", {
     method: "POST",
@@ -8,7 +8,7 @@ function create_user() {
       Lastname: inputs[1].value,
       Username: inputs[2].value,
       age: inputs[3].value,
-      Email: inputs[4].value,
+      email: inputs[4].value,
       Password: inputs[5].value,
     }),
     headers: {
@@ -18,6 +18,8 @@ function create_user() {
     .then((response) => response.json())
     .then((json) => {
       alert("Registeration successful");
-      document.getElementById("register.html").reset();
-    });
+      console.log(json);
+      document.getElementById("login-form").reset();
+    })
+    .catch((e) => console.log(e));
 }
