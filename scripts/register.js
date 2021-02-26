@@ -1,7 +1,7 @@
 function create_user() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("https://immense-bastion-09419.herokuapp.com/register-user/", {
+  fetch("http://localhost:5000/register-user/", {
     method: "POST",
     body: JSON.stringify({
       Firstname: inputs[0].value,
