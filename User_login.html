@@ -7,7 +7,7 @@
     <title>User Login</title>
   </head>
   <body>
-    <form method="GET" onsubmit="log_data()">
+    <form method="GET" onsubmit="event.preventDefault(); login_user()">
       <div class="User-login-content">
         <h4>Username</h4>
         <input
@@ -25,6 +25,8 @@
           placeholder="Enter your password"
         />
         <button type="submit" class="Login-btn" id="login">Login</button>
+        <h3>OR</h3>
+        <a href="register.html">Register</a>
       </div>
     </form>
   </body>

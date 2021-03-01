@@ -1,20 +1,27 @@
-function login_user() {
-  const input = document.getElementsByTagName("input");
+let user;
 
-  fetch("http://localhost:5000/login-user/", {
-    method: "GET",
-    body: JSON.stringify({
-      username: input[0].value,
-      password: input[1].value,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => {
-      alert("Successfully logged in");
-      console.log(json);
-    })
-    .catch((e) => console.log(e));
+fetch("http://127.0.0.1:5000/login-user/")
+  .then((response) => response.json())
+  .then((data) => {
+    console.table(data.body);
+    user = data.body;
+  });
+function login_user() {
+  let inputs = document.getElementsByTagName("input");
+
+  let username = inputs[0].value;
+  let password = inputs[1].value;
+
+  let log = user.filter((user) => {
+    return user.Username == username && user.Password == password;
+  });
+
+  console.log(log);
+
+  if (log.length > 0) {
+    alert("You have Successfully Logged in ");
+    window.location.href = "./index.html";
+  } else {
+    alert("Please enter a valid username and password");
+  }
 }
