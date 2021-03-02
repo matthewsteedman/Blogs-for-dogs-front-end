@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="create_blog_page" id="create_blog_page">
+      <form
+        onsubmit="event.preventDefault(); create_blogs()"
+        id="create-a-blog"
+        r
+        class="create-a-blog"
+      >
+        <h1>Create a Blog</h1>
+        <p>Please fill out the form below to create a blog</p>
+        <div class="blog-info" id="blog-info">
+          <h4>Dog Name</h4>
+          <input
+            type="text"
+            id="dogname"
+            placeholder="Enter Dog Name"
+            name="dogname"
+            required
+          />
+          <h4>Dog Breed</h4>
+          <input
+            type="text"
+            id="dogtype"
+            placeholder="Enter Dog Breed"
+            name="dogtype"
+            required
+          />
+          <h4>Dog Age</h4>
+          <input
+            type="text"
+            id="dogage"
+            placeholder="Enter Dog Age"
+            name="dogage"
+            required
+          />
+          <h4>Weight</h4>
+          <input
+            type="text"
+            id="weight"
+            placeholder="Enter Weight"
+            name="weight"
+            required
+          />
+          <h4>Select An Image</h4>
+          <input type="file" id="imageurl" name="imageurl" required />
+          <h4>Description</h4>
+          <input
+            type="text"
+            id="description"
+            placeholder="Enter Description"
+            name="description"
+            required
+          />
+          <button type="submit" class="add_blog_btn" id="add_blog_btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="../scripts/create-blog.js"></script>
+  </body>
+</html>
