@@ -1,3 +1,13 @@
+var loadFile = function (event) {
+  var output = document.getElementById("output");
+  var fName = "blog_images/" + event.target.files[0].name; //None path with users selected file name
+  if (UrlExists(fName)) {
+    output.src = fName; //Do something like show image
+  } else {
+    alert("File not present"); // Do something to show file not in this path
+  }
+};
+
 function create_blogs() {
   const inputs = document.getElementsByTagName("input");
 
