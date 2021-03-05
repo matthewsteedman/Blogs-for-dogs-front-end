@@ -1,14 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-page-styling/nav-bar.css" />
+    <link rel="stylesheet" href="./view_blogs_styling/view_blogs.css" />
     <title>Viewn all Blogs</title>
   </head>
-  <body>
-    <div id="blog-items"></div>
-
-    <script src="../scripts/view_blogs.js"></script>
+  <body style="padding-top: 50px">
+    <nav class="navbar">
+      <h1>Blogs For <span>Dogs</span></h1>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link" active="true" title="">
+          <a href="view-blogs.html">Blogs</a>
+        </li>
+        <li class="nav-link"><a href="">About</a></li>
+        <li class="nav-link"><a href="">Contact</a></li>
+        <li class="nav-link">
+          <button onclick="sign_out();" class="sign_out_btn" id="sign_out_btn">
+            Sign Out
+          </button>
+        </li>
+      </ul>
+      <button class="nav-btn">Menu</button>
+    </nav>
+    <form
+      id="search-form"
+      onsubmit="event.preventDefault(); search_blog()"
+      style="top: 7%; position: absolute"
+    >
+      <input type="text" name="search" placeholder="breed" />
+      <button type="submit">Search</button>
+    </form>
+    <div id="blog-items" class="blog-items"></div>
+    <div id="blog-content"></div>
   </body>
+
+  <script src="../scripts/view_blogs.js"></script>
+  <script src="./scripts/search_a_blog_funct.js"></script>
 </html>

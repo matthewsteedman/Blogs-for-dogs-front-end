@@ -1,17 +1,17 @@
-var loadFile = function (event) {
-  var output = document.getElementById("output");
-  var fName = "blog_images/" + event.target.files[0].name; //None path with users selected file name
-  if (UrlExists(fName)) {
-    output.src = fName; //Do something like show image
-  } else {
-    alert("File not present"); // Do something to show file not in this path
-  }
-};
+// var loadFile = function (event) {
+//   var output = document.getElementById("output");
+//   var fName = "blog_images/" + event.target.files[0].name; //None path with users selected file name
+//   if (UrlExists(fName)) {
+//     output.src = fName; //Do something like show image
+//   } else {
+//     alert("File not present"); // Do something to show file not in this path
+//   }
+// };
 
 function create_blogs() {
   const inputs = document.getElementsByTagName("input");
 
-  fetch("http://localhost:5000/create-blog/", {
+  fetch("https://immense-bastion-09419.herokuapp.com/create-blog/", {
     method: "POST",
     body: JSON.stringify({
       dogname: inputs[0].value,

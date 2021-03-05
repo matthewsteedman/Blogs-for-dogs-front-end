@@ -25,6 +25,15 @@
             name="dogname"
             required
           />
+          <!-- <h4>Username</h4>
+          <input
+            type="text"
+            id="ownername"
+            class="ownername"
+            placeholder="Enter your username"
+            name="ownername"
+            required
+          /> -->
           <h4>Dog Breed</h4>
           <input
             type="text"
@@ -49,9 +58,26 @@
             name="weight"
             required
           />
-          <h4>Select An Image</h4>
-          <input type="file" accept="blog_images/* id="imageurl" name="imageurl"
-          required />
+          <h4>Upload Image</h4>
+          <p>
+            Convert image to a link
+            <a href="https://postimages.org/" target="_blank">Click Me</a>
+            insert the direct link into textbox below.
+          </p>
+          <input
+            type="text"
+            id="imageurl"
+            name="imageurl"
+            placeholder="Enter Image url"
+            required
+          />
+          <!-- <input
+            type="file"
+            accept="blog_images/*"
+            id="imageurl"
+            name="imageurl"
+            required
+          />  -->
           <img id="output" />
           <h4>Description</h4>
           <input

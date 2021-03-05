@@ -1,0 +1,38 @@
+#modal {
+  overflow: hidden;
+}
+.blog-items {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+img {
+  height: 200px;
+}
+
+.modal {
+  position: fixed;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  background: #bebebe;
+  padding: 5%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.modal:hover {
+  border-radius: 72% 28% 31% 69% / 61% 52% 48% 39%;
+}
+
+.modal img {
+  border-radius: 72% 28% 31% 69% / 61% 52% 48% 39%;
+  transition: border-radius 0.3s;
+}
+
+.modal img:hover {
+  border-radius: 19% 81% 62% 38% / 20% 23% 77% 80%;
+}
+
+.modal.active {
+  top: 50%;
+}

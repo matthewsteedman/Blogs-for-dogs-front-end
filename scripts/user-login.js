@@ -1,6 +1,6 @@
 let user;
 
-fetch("http://127.0.0.1:5000/login-user/")
+fetch("https://immense-bastion-09419.herokuapp.com/login-user/")
   .then((response) => response.json())
   .then((data) => {
     console.table(data.body);
