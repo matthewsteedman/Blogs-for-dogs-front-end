@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="user_login_styling/user_login_preloader.css" />
+    <link rel="stylesheet" href="user_login_styling/User_login.css" />
     <title>User Login</title>
   </head>
   <body>
@@ -12,29 +13,29 @@
     <div class="preloader">
       <div class="loader"></div>
     </div>
-
-    <form method="GET" onsubmit="event.preventDefault(); login_user()">
-      <div class="User-login-content">
-        <h4>Username</h4>
-        <input
-          type="text"
-          placeholder="Enter your username"
-          name="username"
-          id="username"
-          required
-        />
-        <h4>Password</h4>
-        <input
-          type="text"
-          class="password"
-          id="password"
-          placeholder="Enter your password"
-        />
-        <button type="submit" class="Login-btn" id="login">Login</button>
-        <h3>OR</h3>
-        <a href="register.html">Register</a>
-      </div>
-    </form>
+    <div class="content_background" id="content_backgroud">
+      <form method="GET" onsubmit="event.preventDefault(); login_user()">
+        <div class="User-login-content">
+          <h4>Username</h4>
+          <input
+            type="text"
+            placeholder="Enter your username"
+            name="username"
+            id="username"
+            required
+          />
+          <h4>Password</h4>
+          <input
+            type="text"
+            class="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <button type="submit" class="Login-btn" id="login">Login</button>
+          <button><a href="register.html">Register</a></button>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="scripts/user-login.js"></script>
 </html>

@@ -1,0 +1,50 @@
+body {
+  background-color: white;
+}
+.content_background {
+  background-color: #3a3b3c;
+  left: 25%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 15%;
+}
+form {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.User-login-content h4 {
+  text-align: center;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 4px;
+}
+a {
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+h4 {
+  font-size: 30px;
+  color: yellow;
+  margin: 10px;
+}
