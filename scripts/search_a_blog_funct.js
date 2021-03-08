@@ -7,8 +7,10 @@ function search_blog() {
     .then((json) => {
       console.log(json);
       console.log(search);
-      let matched_data = json.filter((data) => {
-        return data.dogname == search;
+      let matched_data = json.body.filter((data) => {
+        let match = data.dogname.match(`/${search}/gi`);
+        console.log(match);
+        return match;
       });
       document.getElementById("blog-items").innerHTML = "";
       matched_data.forEach((blog) => create_blog(blog));

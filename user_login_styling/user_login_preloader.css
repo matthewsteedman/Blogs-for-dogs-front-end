@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   height: 100vh;
-  background-color: #e76f51;
-  animation: disappear 5s linear forwards;
+  background-color: black;
+  animation: disappear 3s linear forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,8 @@
 
 /* Spinner */
 .loader {
-  border: 16px solid #f4a261;
-  border-top: 16px solid #e9c46a;
+  border: 16px solid yellow;
+  border-top: 16px solid white;
   border-radius: 50%;
   width: 120px;
   height: 120px;

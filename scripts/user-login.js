@@ -19,6 +19,10 @@ function login_user() {
   console.log(log);
 
   if (log.length > 0) {
+    let usn = document.getElementById("username").value;
+    let psswd = document.getElementById("password").value;
+
+    localStorage.setItem("current_userlogged", JSON.stringify(usn, psswd));
     alert("You have Successfully Logged in ");
     window.location.href = "./index.html";
   } else {
