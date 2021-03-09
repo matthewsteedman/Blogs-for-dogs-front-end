@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="register styling/register.css" />
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <body>
     <div class="register" id="register">
@@ -27,6 +27,7 @@
           <input type="text" placeholder="Enter your email" name="email" id="Email" required>
           <h4>Password</h4>
           <input type="password" placeholder="Enter your password" name="Password" id="Password" required>
+          <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdCcXgaAAAAADk-2pGwTm9lgfCbhN22jwab4a2N"></div>
           <button type="submit" class="register_btn" id="register">Register</button>
         </div>
            
@@ -34,6 +35,7 @@
       </form>
     </div>
     <script src="scripts/register.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
   
 </html>
