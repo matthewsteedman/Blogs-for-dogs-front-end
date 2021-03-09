@@ -23,9 +23,12 @@ function login_user() {
     let psswd = document.getElementById("password").value;
 
     localStorage.setItem("current_userlogged", JSON.stringify(usn, psswd));
-    alert("You have Successfully Logged in ");
+    alert(username + " " + "have Successfully Logged in ");
     window.location.href = "./index.html";
   } else {
     alert("Please enter a valid username and password");
   }
+}
+function redirect() {
+  window.location.href = "./register.html";
 }
