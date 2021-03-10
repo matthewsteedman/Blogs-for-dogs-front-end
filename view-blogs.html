@@ -14,6 +14,7 @@
     <title>Viewn all Blogs</title>
   </head>
   <body style="padding-top: 50px">
+    <!-- navigational bar -->
     <nav class="navbar">
       <h1>Blogs For <span>Dogs</span></h1>
       <ul class="nav-links" id="nav-links">
@@ -29,8 +30,9 @@
           <button onclick="sign_out();" class="sign_out_btn">Sign Out</button>
         </li>
       </ul>
-      <button class="nav-btn">Menu</button>
+      <button class="nav-btn" onclick="nav_btn_function()">Menu</button>
     </nav>
+    <!-- search form -->
     <form
       id="search-form"
       onsubmit="event.preventDefault(); search_blog()"
@@ -39,6 +41,7 @@
       <input type="text" name="search" placeholder="breed" />
       <button type="submit">Search <i class="fa fa-search"></i></button>
     </form>
+    <!-- blog content -->
     <div id="blog-items" class="blog-items"></div>
     <div id="blog-content"></div>
   </body>
@@ -46,4 +49,5 @@
   <script src="../scripts/view_blogs.js"></script>
   <script src="./scripts/search_a_blog_funct.js"></script>
   <script src="/scripts/sign_out.js"></script>
+  <script src="../scripts/nav-bar.js"></script>
 </html>
