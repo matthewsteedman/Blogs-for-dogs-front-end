@@ -56,3 +56,15 @@ footer h1 {
 footer h1 span {
   color: white;
 }
+@media only screen and (max-width: 900px) {
+  input {
+    padding: 0px;
+    margin: 0px;
+  }
+  .register-content {
+    margin-top: 85px;
+  }
+  form {
+    margin-top: 25px;
+  }
+}
