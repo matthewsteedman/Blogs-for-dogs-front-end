@@ -2,7 +2,9 @@ fetch("https://immense-bastion-09419.herokuapp.com/display-content/")
   .then((response) => response.json())
   .then((json) => {
     console.log(json);
+    console.table(json);
     json.body.forEach((dog_table) => {
+      console.table(dog_table);
       create_blog_item(dog_table);
       blog_modal(dog_table);
     });
@@ -15,6 +17,7 @@ function create_blog_item(dog_table) {
       <img src='${dog_table.imageurl}' alt=${dog_table.dogname}>
       <button type="button" onclick="toggle_modal(${dog_table.dogid})">View More</button>
     </div>`;
+  console.table(dog);
   let blog_card = document.getElementById("blog-items");
   blog_card.innerHTML += dog;
 }
