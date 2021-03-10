@@ -1,0 +1,42 @@
+h1,
+p {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+}
+h4 {
+  color: yellow;
+  text-align: center;
+}
+input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+}
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s all ease;
+}
+body {
+  height: 30vw;
+}

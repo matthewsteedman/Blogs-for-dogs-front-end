@@ -56,3 +56,25 @@ h4 {
   color: yellow;
   margin: 10px;
 }
+@media only screen and (max-width: 900px) {
+  .content_background {
+    background-color: black;
+    left: 25%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .content_background {
+    background-color: black;
+    left: 25%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 0%;
+    margin-right: 7%;
+    margin-top: 24%;
+  }
+}
