@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="see_more_styling/see-more.css" />
+    <link rel="stylesheet" href="index-page-styling/nav-bar.css" />
+    <link rel="stylesheet" href="index-page-styling/middle-content.css" />
+    <link rel="stylesheet" href="user_login_styling/user_login_preloader.css" />
+
+    <title>Index</title>
+  </head>
+  <body>
+     <!-- Preloader -->
+     <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <div class="content_background" id="content_backgroud">
+    <!-- nav bar content -->
+    <nav class="navbar">
+      <h1>Blogs For <span>Dogs</span></h1>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="view-blogs.html">Blogs</a></li>
+        <li class="nav-link"><a href="create_blog.html">Create a Blog</a></li>
+        <li class="nav-link"><a href="">About</a></li>
+        <li class="nav-link"><a href="">Contact</a></li>
+        <li class="nav-link">
+          <button onclick="sign_out();" class="sign_out_btn" id="sign_out_btn">
+            Sign Out
+          </button>
+        </li>
+      </ul>
+      <button class="nav-btn">Menu</button>
+    </nav>
+
+    <!-- main image content -->
+    <div class="middle-content" id="middle-content">
+      <h1>BLOGS FOR <span>DOGS</span></h1>
+      <a href="#blogs-page">See More</a>
+    </div>
+    <section class="blogs" id="blogs-page">
+      <div class="blogs-content">
+        <img class="content-image" src="images/pug-pic.jpg" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          inventore magni eligendi voluptate magnam dolores nam unde officia
+          minus cupiditate nihil architecto minima, labore repellendus
+          perferendis id illo provident accusantium.
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="../scripts/nav-bar.js"></script>
+  <script src="/scripts/sign_out.js"></script>
+</html>

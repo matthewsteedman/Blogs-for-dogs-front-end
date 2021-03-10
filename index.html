@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="see_more_styling/see-more.css" />
-    <link rel="stylesheet" href="index-page-styling/nav-bar.css" />
-    <link rel="stylesheet" href="index-page-styling/middle-content.css" />
     <link rel="stylesheet" href="user_login_styling/user_login_preloader.css" />
+    <link rel="stylesheet" href="user_login_styling/User_login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index-page-styling/nav-bar.css" />
 
-    <title>Index</title>
+    <title>User Login</title>
   </head>
   <body>
-     <!-- Preloader -->
-     <div class="preloader">
-      <div class="loader"></div>
-    </div>
-    <div class="content_background" id="content_backgroud">
-    <!-- nav bar content -->
     <nav class="navbar">
       <h1>Blogs For <span>Dogs</span></h1>
       <ul class="nav-links" id="nav-links">
-        <li class="nav-link"><a href="index.html">Home</a></li>
-        <li class="nav-link"><a href="view-blogs.html">Blogs</a></li>
-        <li class="nav-link"><a href="create_blog.html">Create a Blog</a></li>
         <li class="nav-link"><a href="">About</a></li>
         <li class="nav-link"><a href="">Contact</a></li>
-        <li class="nav-link">
-          <button onclick="sign_out();" class="sign_out_btn" id="sign_out_btn">
-            Sign Out
-          </button>
-        </li>
       </ul>
       <button class="nav-btn">Menu</button>
     </nav>
-
-    <!-- main image content -->
-    <div class="middle-content" id="middle-content">
-      <h1>BLOGS FOR <span>DOGS</span></h1>
-      <a href="#blogs-page">See More</a>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
     </div>
-    <section class="blogs" id="blogs-page">
-      <div class="blogs-content">
-        <img class="content-image" src="images/pug-pic.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          inventore magni eligendi voluptate magnam dolores nam unde officia
-          minus cupiditate nihil architecto minima, labore repellendus
-          perferendis id illo provident accusantium.
-        </p>
-      </div>
-    </section>
+    <div class="content_background" id="content_backgroud">
+      <!-- login form  -->
+      <form method="GET" onsubmit="event.preventDefault(); login_user()">
+        <div class="User-login-content">
+          <h4>Username</h4>
+          <input
+            type="text"
+            placeholder="Enter your username"
+            name="username"
+            id="username"
+            required
+          />
+          <h4>Password</h4>
+          <input
+            type="text"
+            class="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <div
+            class="g-recaptcha brochure__form__captcha"
+            data-sitekey="6LdCcXgaAAAAADk-2pGwTm9lgfCbhN22jwab4a2N"
+          ></div>
+          <button type="submit" class="Login-btn" id="login">
+            Login<i class="fas fa-sign-in-alt"></i>
+          </button>
+          <button onclick="redirect();">Register</button>
+        </div>
+      </form>
+    </div>
   </body>
-  <script src="../scripts/nav-bar.js"></script>
-  <script src="/scripts/sign_out.js"></script>
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="scripts/user-login.js"></script>
 </html>
