@@ -24,3 +24,7 @@ function create_user() {
     })
     .catch((e) => console.log(e));
 }
+function cancel_register() {
+  window.location.href = "./index.html";
+  alert("Cancelling registration");
+}

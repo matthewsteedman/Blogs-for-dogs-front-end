@@ -1,3 +1,6 @@
+.register-content {
+  margin-top: 3%;
+}
 h1,
 p {
   text-align: center;
@@ -24,7 +27,7 @@ input {
   border-bottom: 2px solid white;
 }
 button {
-  width: 100%;
+  width: 45%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -37,6 +40,19 @@ button:hover {
   color: white;
   transition: 0.3s all ease;
 }
-body {
-  height: 30vw;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 10%;
+  position: fixed;
+  width: 100vw;
+  bottom: 0%;
+}
+footer h1 {
+  color: #faed26;
+}
+footer h1 span {
+  color: white;
 }
