@@ -18,7 +18,7 @@ function create_user() {
     .then((response) => response.json())
     .then((json) => {
       alert("Registeration successful");
-      window.location.href = "./User_login.html";
+      window.location.href = "./index.html";
       console.log(json);
       document.getElementById("register.js").reset();
     })
