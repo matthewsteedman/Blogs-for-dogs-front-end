@@ -67,4 +67,8 @@ footer h1 span {
   form {
     margin-top: 0px;
   }
+  footer {
+    padding: 0px 0%;
+    font-size: 10px;
+  }
 }
