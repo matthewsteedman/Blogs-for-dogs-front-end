@@ -56,6 +56,22 @@ h4 {
   color: yellow;
   margin: 10px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 10%;
+  position: fixed;
+  width: 100vw;
+  bottom: 0%;
+}
+footer h1 {
+  color: #faed26;
+}
+footer h1 span {
+  color: white;
+}
 @media only screen and (max-width: 900px) {
   .content_background {
     background-color: black;
