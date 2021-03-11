@@ -28,8 +28,12 @@ function create_blogs() {
     .then((response) => response.json())
     .then((json) => {
       alert("Blog successfully created");
-      window.location.href = "./index.html";
+      window.location.href = "./view-blogs.html";
       console.log(json);
       document.getElementsById("create-blog.js");
     });
+}
+function redirect() {
+  alert("Canceling blog");
+  window.location.href = "./landing_page.html";
 }

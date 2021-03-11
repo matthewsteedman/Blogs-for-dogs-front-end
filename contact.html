@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact_page_styling/contact.css" />
+    <link rel="stylesheet" href="index-page-styling/nav-bar.css" />
+    <link rel="stylesheet" href="user_login_styling/user_login_preloader.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Blogs For <span>Dogs</span></h1>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link">
+          <a href="./contact.html" style="color: yellow">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" onclick="nav_btn_function()">Menu</button>
+    </nav>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- contact form  -->
+    <div class="contact_form">
+      <h1>How can we help ?</h1>
+      <p>Please submit any questions and feedback. Dont be afraid to say Hi!</p>
+      <form method="post" action="https://formspree.io/f/xwkwaylb">
+        <h4>User Name</h4>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter Your username"
+          required
+        />
+        <h4>Email</h4>
+        <input type="email" name="_replyto" placeholder="Email" required />
+        <h4>Message</h4>
+        <textarea name="message" placeholder="message" required></textarea>
+        <button type="submit">Submit</button>
+        <button type="button" onclick="return_pre()" ;>Cancel</button>
+      </form>
+    </div>
+  </body>
+  <script src="scripts/nav-bar.js"></script>
+  <script src="scripts/contact.js"></script>
+</html>

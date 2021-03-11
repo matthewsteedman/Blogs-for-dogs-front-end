@@ -1,0 +1,50 @@
+.create_blog_page {
+    margin-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+.create_blog_page p {
+    color: white;
+}
+
+input {
+    width: 100%;
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.add_blog_btn {
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
+}
