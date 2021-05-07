@@ -1,114 +1,168 @@
 body {
-  background-color: white;
+    background-color: white;
 }
+
 .content_background {
-  background-color: black;
-  left: 25%;
-  height: 100%;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: 33%;
-  margin-right: 33%;
-  margin-top: 11%;
+    background-color: black;
+    left: 25%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 11%;
 }
+
 form {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
+
 .User-login-content h4 {
-  text-align: center;
+    text-align: center;
 }
+
 input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid white;
-  border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
 }
 
 button {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid white;
-  border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 button:hover {
-  background-color: black;
-  color: white;
-  transition: 0.3s all ease;
-}
-a {
-  width: 100%;
-  color: black;
-  text-align: center;
-}
-a:hover {
-  color: white;
-}
-h4 {
-  font-size: 30px;
-  color: yellow;
-  margin: 10px;
-}
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  padding: 10px 10%;
-  position: fixed;
-  width: 100vw;
-  bottom: 0%;
-}
-footer h1 {
-  color: #faed26;
-}
-footer h1 span {
-  color: white;
-}
-@media only screen and (max-width: 900px) {
-  .content_background {
     background-color: black;
-    left: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 24%;
-    margin-right: 24%;
-    margin-top: 15%;
-  }
-  .button {
-    background-color: yellow;
+    color: white;
+    transition: 0.3s all ease;
+}
+
+a {
+    width: 100%;
     color: black;
-  }
-  footer {
-    padding: 0px 0%;
-    font-size: 10px;
-  }
+    text-align: center;
+}
+
+a:hover {
+    color: white;
+}
+
+h4 {
+    font-size: 30px;
+    color: yellow;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 10%;
+    position: fixed;
+    width: 100vw;
+    bottom: 0%;
+}
+
+footer h1 {
+    margin-left: 10%;
+    color: #faed26;
+}
+
+footer h1 span {
+    color: white;
+}
+
+@media only screen and (max-width: 2000px) {
+    .content_background {
+        background-color: black;
+        left: 25%;
+        height: 100%;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 11%;
+    }
+    .button {
+        background-color: yellow;
+        color: black;
+    }
+    footer {
+        padding: 0px 0%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .content_background {
+        background-color: black;
+        left: 25%;
+        height: 100%;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 5.5%;
+    }
+    .button {
+        background-color: yellow;
+        color: black;
+    }
+    footer {
+        padding: 0px 0%;
+        height: 8%;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .content_background {
+        background-color: black;
+        left: 25%;
+        height: 100%;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 15%;
+    }
+    .button {
+        background-color: yellow;
+        color: black;
+    }
+    footer {
+        padding: 0px 0%;
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  .content_background {
-    background-color: black;
-    left: 25%;
-    height: 100%;
-    border-radius: 10px 10px 10px 10px;
-    margin-left: 0%;
-    margin-right: 7%;
-    margin-top: 24%;
-  }
-
-  button {
-    background-color: yellow;
-    color: black;
-  }
-  footer {
-    padding: 0px 0%;
-    font-size: 10px;
-  }
+    .content_background {
+        background-color: black;
+        left: 25%;
+        height: 100%;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 0%;
+        margin-right: 7%;
+        margin-top: 24%;
+    }
+    button {
+        background-color: yellow;
+        color: black;
+    }
+    footer {
+        padding: 0px 0%;
+        font-size: 10px;
+    }
 }

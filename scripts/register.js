@@ -1,3 +1,4 @@
+// register function /
 function create_user() {
   const inputs = document.getElementsByTagName("input");
 
@@ -24,7 +25,8 @@ function create_user() {
     })
     .catch((e) => console.log(e));
 }
+// cancel function
 function cancel_register() {
-  window.location.href = "./index.html";
+  window.location.href = "./landing_page.html";
   alert("Cancelling registration");
 }

@@ -32,3 +32,7 @@ function login_user() {
 function redirect() {
   window.location.href = "./register.html";
 }
+function admin_login() {
+  alert("Admin logging");
+  window.location.href = "./admin_landing_page.html";
+}

@@ -1,3 +1,4 @@
+// view blogs function
 fetch("https://immense-bastion-09419.herokuapp.com/display-content/")
   .then((response) => response.json())
   .then((json) => {

@@ -4,6 +4,12 @@
 .blog-items {
   margin-top: 80px;
   margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blogs {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
